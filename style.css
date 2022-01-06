@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#F8F8F8;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: -2px 13px 72px -40px rgba(38,38,38,0.35);
+}
+
+.sidebar{
+    width: 35%;
+    background-color: #44B3D1;
+    padding: 30px;
+    color: #FFF;
+}
+
+h1, h2{
+    margin: 30px auto 10px;
+}
+
+.sidebar li{
+    list-style: none;
+    line-height: 1.25;
+    padding-bottom: 5px;
+}
+
+.sidebar hr{
+    margin: 40px auto;
+    border: 1px solid #369ab6;
+    width: 100%;
+}
+
+.profilebio{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.profile{
+    width: 70%;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+hr{
+    margin: 40px auto;
+    border: 1px solid #f8f8f8;
+    width: 100%;
+}
+
+.experience{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+}
+
+ .expdata{
+    min-width: 200px;
+} 
+
+.expinfo p{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p, ul{
+    margin: 5px auto;
+    line-height: 1.25;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile li{
+    list-style: square;
+    padding-bottom: 5px;
+}
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+.toolname{
+    font-size: 14px;
+}
+
+.toolbar {
+    width: 150px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    background: #1e515f;
+    position: relative;
+}
+
+.toolbar div {
+        position: absolute;
+        height: 100%;
+        background: #fff;
+        border-radius: 10px;
+}
+
+.spacing{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1040px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: 20px auto;
+        box-shadow: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        background-color: #44B3D1;
+        padding: 30px;
+        color: #FFF;
+        text-align: center;
+    }
+
+    .experience{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    img{
+        width: 150px;
+        height: auto;
+        border-radius: 100px;
+        text-align: center;
+    }
+
+    .profile{
+        width: 100%;
+        background-color: #FFF;
+        padding: 30px;
+    }
+
+    .tools{
+        display: inline-block;
+        justify-content: space-evenly;
+        margin: 5px auto;
+    }
+
+}
